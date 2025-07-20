@@ -1,0 +1,38 @@
+{
+    // General editor customizations
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "editor.formatOnSave": false,
+    "workbench.tree.indent": 20,
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#fdc409"
+    },
+    // C++
+    // C++ include paths to avoid annoying warnings
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/home/renato/Local_Installations/llvm-project/installed/include"
+    ],
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.formatting": "clangFormat",
+    // Makefile
+    "[makefile]": {
+        "editor.insertSpaces": false, // Force tabs (not spaces)
+        "editor.tabSize": 4, // Tab width (usually 4 or 8)
+        "editor.detectIndentation": false // Disable auto-detection
+    },
+    // Disable all CMake auto build shenanigans
+    "cmake.buildBeforeRun": false,
+    "cmake.clearOutputBeforeBuild": false,
+    "cmake.configureOnEdit": false,
+    "cmake.configureOnOpen": false,
+    "cmake.parseBuildDiagnostics": false,
+    "cmake.saveBeforeBuild": false,
+    "cmake.showConfigureWithDebuggerNotification": false,
+    "cmake.automaticReconfigure": false,
+    "cmake.autoSelectActiveFolder": false,
+    "cmake.exportCompileCommandsFile": false,
+    "cmake.loadCompileCommands": false,
+    // Keywords to highlight
+    "todohighlight.keywordsPattern": "(TODO|FIXME)",
+    "terminal.integrated.gpuAcceleration": "off",
+}
