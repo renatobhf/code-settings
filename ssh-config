@@ -1,0 +1,39 @@
+Host gmap-proxy
+    HostName gmapsrv.pucrs.br
+    User renatohoffmann
+    #IdentityFile ~/.ssh/id_ed25519
+
+Host gmap-gitlab
+    HostName gmaprepos
+    User git
+    ProxyJump gmap-proxy
+
+Host roadrunner
+    HostName roadrunner
+    User renatohoffmann
+    ProxyJump gmap-proxy
+
+Host cerrado
+    HostName cerrado.lad.pucrs.br
+    User renato.hoffmann
+    ProxyJump gmap-proxy
+
+Host antares
+    HostName antares
+    User renatohoffmann
+    ProxyJump gmap-proxy
+
+Host menkar
+    HostName menkar
+    User renatohoffmann
+    ProxyJump gmap-proxy
+
+Host ciars
+    HostName ccd.lad.pucrs.br
+    User renatohoffmann
+
+Host atria
+    HostName atria
+    Port 2222
+    User renatohoffmann
+    ProxyJump ciars

@@ -10,7 +10,9 @@
     // C++ include paths to avoid annoying warnings
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",
-        "/home/renato/Local_Installations/llvm-project/installed/include"
+        "/home/renato/Local_Installations/llvm-project/installed/include",
+        "/usr/lib/x86_64-linux-gnu/openmpi/include/",
+        "/home/renato/Local_Installations/openmpi-5.0.8/build/include"
     ],
     "C_Cpp.default.cppStandard": "c++20",
     "C_Cpp.formatting": "clangFormat",
